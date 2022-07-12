@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/51657c7de3.js" crossorigin="anonymous"></script>
+    <title>Todo List</title>
+</head>
+<body>
+
+    <div id="container">
+            
+        <h1 id="page-heading"><i class="fas fa-tasks"></i> TODO LIST</h1>
+        <form id="input-form">
+            <input id="task-input" type="text" placeholder="Add new...">
+            <button id="add-button">
+                <i class="fas fa-plus-circle"></i>
+                <!-- <i class="fa fa-plus" aria-hidden="true"></i> -->
+            </button>
+        </form>
+        
+        <div class="line-between"></div>
+    
+        <div id="task-status">
+            <button id="clear-completed">Clear completed</button>
+            <select name="category" id="category-select" >
+                <option value="All">All</option>                   
+                <option value="Undone">Undone</option>
+                <option value="Done">Done</option> 
+            </select>
+        </div>
+
+        <ul  id="task-list" style="list-style-type:none;">
+            <!-- Your tasks here -->
+        </ul>
+            
+    </div>
+    
+    <script src="main.js" ></script>
+
+</body>
+</html>
